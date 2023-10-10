@@ -4,8 +4,8 @@
    $longueur = strlen($motDepasseValid); //cette fonction commence par calculer la longueur du nom en utilisant la fonction strlen()
    // et stocke cette longueur dans la variable $longueur.
    var_dump ($longueur);
-   $reponse=
-   [
+   $reponse= //Création d'un tableau associatif $reponse avec deux clés :
+    [
    "valid" => true ,
    "message" => ""
    ];
@@ -24,8 +24,8 @@
         'Valid'=>false,
         "msg"=> "le nom n'est pas correct",
     ];
-    return $response;
   }
+  return $reponse;
 }
  ?>
     

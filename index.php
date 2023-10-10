@@ -10,8 +10,8 @@
         
    <legend> <h1> IDENTIFICATION DU PERSONNEL</h1></legend>
     <form method="post"  action="fonctions.php">
-        <label for ="first name" > Mot de passe: </label>
-        <input type="text" name="name" id="Name"> </br>
+        <label for ="Mot de passe" > Mot de passe: </label>
+        <input type="text" name="name" id="name"> </br>
         <input type ="Button" name ="Envoyer" value ="Envoyer">
 </fieldset>
 </form>
