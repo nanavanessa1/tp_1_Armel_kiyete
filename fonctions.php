@@ -36,6 +36,13 @@ function addSalt($nameToSalt)
 
     return $saltedMotDePasse;
 }
+function encodeMotDePasse($saltedMotDePasse)
+{
+    $encodeMotDePasse=sha1($saltedMotDePasse);
+    return $encodeMotDePasse;
+  //SHA-1 est un algorithme d'encodage qui prend une chaîne de caractères en entrée 
+  //et génère une chaîne de caractères hexadécimale de 40 caractères en sortie.  
+}
  ?>
     
 
