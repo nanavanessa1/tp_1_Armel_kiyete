@@ -9,7 +9,7 @@ if($_POST){
         echo"</br>Nom vide</br>";
     }
     else{
-        echo"</br> mon nom est :" . $name ;
+        echo"</br> Mon mot de passe " . $name ;
     }
 }
 ?>
