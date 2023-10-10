@@ -27,6 +27,14 @@
     return $reponse;
   }
   
+
+}
+function addSalt($nameToSalt)
+{
+    $salt="ajouteDuSel1234";
+    $saltedMotDePasse =$salt.$nameToSalt.$salt;
+
+    return $saltedMotDePasse;
 }
  ?>
     

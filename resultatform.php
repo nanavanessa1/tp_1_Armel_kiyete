@@ -9,7 +9,12 @@ if($_POST){
         echo"</br>Nom vide</br>";
     }
     else{
-        echo"</br> Mon mot de passe " . $name ;
+        echo"</br> Mon mot de passe est le suivant :" . $name ;
     }
 }
+echo"</br>";
+$saltedMotDePasse= addSalt($_POST["name"]);
+var_dump($saltedMotDePasse);
+ echo"</br>";
+
 ?>
