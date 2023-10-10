@@ -1,34 +1,28 @@
 <?php
- function motDepasseEstValid($motDepasseValid)
- {
-   $longueur = strlen($motDepasseValid); //cette fonction commence par calculer la longueur du nom en utilisant la fonction strlen()
-   // et stocke cette longueur dans la variable $longueur.
-   var_dump ($longueur);
-   $reponse= //Création d'un tableau associatif $reponse avec deux clés :
-    [
-   "valid" => true ,
-   "message" => ""
-   ];
-   if ($longueur < 6) 
-   {
-    $reponse=
-   [
-   "valid" => false ,
-   "message" => "le mot de passe  n'est pas correct"
-   ];
-   }
-
-  elseif ($longueur >10)
-   {
+function motDePasseEstValid($motDePasseValid)
+{
+    $longueur=strlen($motDePasseVali);
     $reponse=[
-        'Valid'=>false,
-        "msg"=> "le mot de passe n'est pas correct",
+        'Valid'=>true,
+        'msg'=>''
     ];
-    return $reponse;
-  }
-  
-
+    if($longueur<6)
+    {
+        $reponse=[
+            'isValid'=>false,
+            'msg' =>'Mot de passe est trop court'
+        ];
+    }
+    elseif ($longueur >10)
+    {
+        $reponse=[
+            'Valid'=>false,
+            'msg' => 'Mot de passe est trop long ',
+        ];
+        return $reponse;
+    }
 }
+ 
 function addSalt($nameToSalt)
 {
     $salt="ajouteDuSel1234";

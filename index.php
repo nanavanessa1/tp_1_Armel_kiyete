@@ -12,7 +12,7 @@
     <form method="post"  action="resultatform.php">
         <label for ="Mot de passe" > Mot de passe: </label>
         <input type="text" name="name" id="name"> </br>
-        <input type ="Button" name ="Envoyer" value ="Envoyer">
+        <input type="submit" name="bouton" value="Cliquez ici">
 </fieldset>
 </form>
 </body>
