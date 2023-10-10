@@ -14,7 +14,7 @@
     $reponse=
    [
    "valid" => false ,
-   "message" => "le nom n'est pas correct"
+   "message" => "le mot de passe  n'est pas correct"
    ];
    }
 
@@ -22,10 +22,11 @@
    {
     $reponse=[
         'Valid'=>false,
-        "msg"=> "le nom n'est pas correct",
+        "msg"=> "le mot de passe n'est pas correct",
     ];
+    return $reponse;
   }
-  return $reponse;
+  
 }
  ?>
     
