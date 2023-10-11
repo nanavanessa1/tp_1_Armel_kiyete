@@ -1,26 +1,12 @@
 <?php
 function motDePasseEstValid($motDePasseValid)
 {
-    $longueur=strlen($motDePasseVali);
-    $reponse=[
-        'Valid'=>true,
-        'msg'=>''
-    ];
-    if($longueur<6)
-    {
-        $reponse=[
-            'isValid'=>false,
-            'msg' =>'Mot de passe est trop court'
-        ];
+    $longueur=strlen($motDePasseValid);
+    $longueur = strlen($motDePasse);
+    if ($longueur < 6 || $longueur > 10) {
+        return "Erreur : Le mot de passe doit avoir entre 6 et 10 caractères.";
     }
-    elseif ($longueur >10)
-    {
-        $reponse=[
-            'Valid'=>false,
-            'msg' => 'Mot de passe est trop long ',
-        ];
-        return $reponse;
-    }
+    
 }
  
 function addSalt($nameToSalt)
